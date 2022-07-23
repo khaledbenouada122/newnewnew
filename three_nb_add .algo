@@ -1,0 +1,34 @@
+ALGORITHM algorithm_name
+VAR
+ sum_caract,sum_mot,sum_voy : INTEGER
+ phrase : STRING
+    INTEGER:=0
+BEGIN
+
+   
+IF (phrase.length == "." ) THEN
+  read(phrase.length)
+ELSE
+    Write("donner une phrase qui termine par .")
+END_IF 
+/*calcule de nombre de mots dans une phrase */
+FOR  leti 1 TO phrase.length STEP i++  DO
+    IF (i=" ") THEN
+        sum_mot = sum_mot + 1
+    
+    END_IF
+END_FOR
+/* clacule de nombre de caractere dans une phrase */
+FOR let j 1  TO phrase.length STEP j++  DO
+    sum_caract= sum_caract + 1
+END_FOR
+/*calcul de nombre de voyelle danns une phrase */
+FOR  let k FROM 1 TO max phrase.length k++ DO
+    IF (phrase[k]=("a"or "e" ou "o"or "i" or"y" or "u" )) THEN
+              sum_voy = sum_voy +1;
+    END_IF
+Write("le nombre de mots dans une phrase est : ",sum_mot)
+Write("le nombe de caractere dans une phrase est :",sum_caract)
+Write("le nombre de voyelle dans u,e phrase est :",sum_voy )
+
+  
